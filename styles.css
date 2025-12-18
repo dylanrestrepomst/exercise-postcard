@@ -1,0 +1,57 @@
+body {
+	background: black;
+}
+
+.postcard {
+	background: white;
+	width: 400px;
+	height: 300px;
+	margin: auto; /*El margin: auto; centrará horizontalmente el <div>.*/
+}
+.postcard-header {
+	display: flex; /*display:flex. Cuando la aplicas a cualquier <div>, todos sus hijos se organizarán
+     horizontalmente en vez de verticalmente (como por defecto). */
+}
+.postcard-header img {
+	width: 50px;
+	height: 50px; /*Aplícale a la imagen un width y height menor, 
+    para que sea bastante más pequeña, quizás 50px x 50px.*/
+}
+.postcard-header h1 {
+	margin: 0%;
+	width: 500px; /*Haz que el <h1> sea mucho más ancho para empujar la imagen 
+    hacia el lado derecho del postcard. También elimina 
+    los márgenes del <h1> */
+}
+
+.postcard-body {
+	display: flex;
+}
+.body-left p {
+	margin-top: 0%;
+	font-size: medium;
+	font-style: italic; /*El primer <p> no necesita margin-top 
+    (margen superior), así que debes eliminarlo.*/
+}
+.body-left,
+.body-right {
+	padding: 5px;
+} /*El .body-left y .body-right deben tener
+ un padding (relleno) para separar el texto del borde de las cajas.*/
+.body-right input {
+	border-color: grey;
+	border: none;
+	border-bottom: 1px solid grey; /*PARA CREAR EL BORDE DE ABAJO LE TENEMOS QUE DAR
+	PROPIEDADES COMO  SOLID  Y EL COLOR DE ESA MANERA SE GENERA EL BORDE AL NO SER ELIMINADO CO
+	NONE BORDER*/
+}
+.postcard-footer {
+	text-align: center; /*Aplica la regla text-align: center; a la clase .postcard-footer, este estilo ayudará a alinear el
+	 contenido del <div> hacia el centro (el botón estará centrado). */
+}
+.postcard-footer button {
+	background-color: grey;
+	padding: 2px;
+	font-size: smaller;
+	font-style: italic;
+}
